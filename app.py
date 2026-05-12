@@ -13,7 +13,7 @@ st.set_page_config(page_title="Simulador de Subdenuncia Empresarial - UNI", layo
 # 1. Carga del Modelo (Despliegue)
 @st.cache_resource
 def load_analytics():
-    model = joblib.load('outputs/models/xgb_model_v1.pkl')
+    model = joblib.load('xgb_model_v1.pkl')
     return model
 
 model = load_analytics()
